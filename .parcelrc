@@ -1,0 +1,12 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*jquery-3.5.1.slim.min.js": [],
+    "*bootstrap-4.5.2.min.js": [],
+    "*data.js": [
+        "...",
+        "parcel-transformer-obfuscation"
+    ]
+  }
+}
+

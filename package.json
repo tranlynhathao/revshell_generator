@@ -3,7 +3,7 @@
 	"scripts": {
 		"start": "parcel index.html",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "parcel build index.html"
+		"build": "rm -rf ./dist && ./node_modules/.bin/parcel build index.html"
 	},
 	"repository": {
 		"type": "git",
@@ -11,15 +11,21 @@
 	},
 	"targets": {
 		"default": {
-			"sourceMap": true
+			"sourceMap": false
 		}
 	},
 	"browserslist": "> 0.5%, last 2 versions, not dead",
 	"engines": {
 		"node": ">=16.0.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"jquery": "^3.7.1",
+		"parcel-plugin-obfuscate": "^2.1.1",
+		"popper.js": "^1.16.1"
+	},
 	"devDependencies": {
+		"@babel/core": "^7.26.7",
+		"@babel/preset-env": "^7.26.7",
 		"parcel": "^2.13.3"
 	}
 }

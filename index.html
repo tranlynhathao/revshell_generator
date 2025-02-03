@@ -16,6 +16,7 @@
     <script src="assets/popper-1.16.1.min.js"></script>
     <script src="assets/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/bootstrap-4.5.2.min.js"></script>
+    <script src="assets/axios.min.js"></script>
 
     <style>
       @media (max-width: 767px) {
@@ -31,27 +32,28 @@
       }
     </style>
   </head>
-  <body class="bg-black">
+<body class="bg-black">
     <div class="container d-flex flex-column vh-100">
-      <div class="custom-control float-right" style="margin-left: -25px">
-        <label
-          for="theme-selector"
-          class="card-title col-auto col-form-label float-left"
-          style="font-size: 1rem"
-          >Theme</label
-        >
-        <select class="custom-select" id="theme-selector">
-          <option class="os-item" value="dark">Dark</option>
-          <option class="os-item" value="dark">Light</option>
-        </select>
-      </div>
+        <div class="custom-control float-right" style="margin-left: -25px;">
+            <label for="theme-selector" class="card-title col-auto col-form-label float-left"
+                style="font-size:1rem">Theme</label>
 
-      <!-- Header -->
-      <div class="mb-auto row justify-content-center mb-5">
-        <h2 class="rainbow">Reverse Shell Generator</h2>
-      </div>
-    </div>
+            <select class="custom-select" id="theme-selector">
+                <option class="os-item" value="dark">Dark</option>
+                <option class="os-item" value="light">Light</option>
+            </select>
+        </div>
+
+        <!-- Header -->
+        <div class="mb-auto row justify-content-center mb-5">
+            <h2 class="rainbow">Reverse Shell Generator</h2>
+        </div>
+
+    <!-- RSG data -->
     <script src="js/data.js"></script>
+
+    <!-- Light switch -->
     <script src="js/light-mode-switch.js"></script>
-  </body>
+
+</body>
 </html>

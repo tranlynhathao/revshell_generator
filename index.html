@@ -31,5 +31,27 @@
       }
     </style>
   </head>
-  <body class="bg-black"></body>
+  <body class="bg-black">
+    <div class="container d-flex flex-column vh-100">
+      <div class="custom-control float-right" style="margin-left: -25px">
+        <label
+          for="theme-selector"
+          class="card-title col-auto col-form-label float-left"
+          style="font-size: 1rem"
+          >Theme</label
+        >
+        <select class="custom-select" id="theme-selector">
+          <option class="os-item" value="dark">Dark</option>
+          <option class="os-item" value="dark">Light</option>
+        </select>
+      </div>
+
+      <!-- Header -->
+      <div class="mb-auto row justify-content-center mb-5">
+        <h2 class="rainbow">Reverse Shell Generator</h2>
+      </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/light-mode-switch.js"></script>
+  </body>
 </html>

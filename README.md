@@ -1,6 +1,6 @@
 # Reverse Shell Generator
 
-Great for CTF
+The Reverse Shell Generator is a powerful and user-friendly web application designed for generating reverse shell payloads and setting up listeners. It is particularly valuable for cybersecurity professionals, penetration testers, and CTF enthusiasts who require quick and customizable shell solutions.
 
 # Dev
 
